@@ -1,0 +1,27 @@
+server:
+  port: 9000
+
+spring:
+  application:
+    name: gateway
+  cloud:
+    gateway:
+      routes:
+        - id: user_route
+          #uri: http://localhost:8082/  #when not use eureka registry
+          uri: lb://user-service   #get from eureka registry
+          predicates:
+            - Path=/user/**
+
+        - id: order_route
+          #uri: http://localhost:8081/
+          uri: lb://order-service
+          predicates:
+            - Path=/order/**
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
