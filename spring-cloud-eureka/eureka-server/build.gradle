@@ -6,7 +6,6 @@ plugins {
 
 group = 'xyz.defe.springCloud.examples'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '15'
 
 repositories {
 	mavenCentral()
@@ -33,6 +32,3 @@ dependencyManagement {
 test {
 	useJUnitPlatform()
 }
-
-//skip test
-test.enabled = false
