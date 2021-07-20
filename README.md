@@ -4,6 +4,8 @@
 - [Spring Cloud Gateway With Eureka](spring-cloud-gateway-eureka)
 - [Spring Cloud Eureka With Hystrix](spring-cloud-hystrix-eureka)
 - [Spring Cloud Sleuth With Zipkin](spring-cloud-sleuth-zipkin)
+- [Spring Cloud Gateway With Circuit Breaker - Hystrix](spring-cloud-gateway-hystrix)
+- [Spring Cloud Gateway With Circuit Breaker - Resilience4j](spring-cloud-gateway-resilience4j)
 
 
 ## Build And Run
